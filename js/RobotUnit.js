@@ -81,9 +81,10 @@ function RobotUnit(id, ctx, startPosition, shyame, robotUnits, mapArray, collisi
 
         _this.sideChange = _this.shyame.actor.position.x > _this.position.x;
         if(_this.sideChange)
-            _this.faceSide = 'right';
+            _this.faceSide = 'right'; #dzax click
+        
         else
-            _this.faceSide = 'left';
+            _this.faceSide = 'left'; #aj click
 
         if(( _this.shyame.actor.position.y - _this.position.y )/ (_this.shyame.actor.position.x - _this.position.x) > 0){
             _this.commandsCount['D'] += 1;
